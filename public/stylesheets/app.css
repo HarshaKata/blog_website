@@ -1,0 +1,35 @@
+h1{
+	color:#70225e;
+	padding-left: 30%;
+	font: italic small-caps bold 30px/40px Arial, serif;
+}
+h2 {
+	text-transform: uppercase;
+	color:#3e3191;
+	font: italic small-caps bold 18px/30px Georgia, serif;
+	
+}
+img {
+	width: 20%;
+}
+/*body {
+	background: url(https://i.pinimg.com/236x/23/05/1c/23051c25e794ed3af35e7c2159a47468.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}*/
+#fourth{
+	display:flex;
+}
+#login {
+	border:2px black solid;
+	position:relative;
+	right:120px;
+	top:20px;	
+}
+#signin {
+	border:2px black solid;
+	position:relative;
+	right:120px;
+	top:20px;	
+}
+
