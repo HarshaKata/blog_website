@@ -1,2 +1,2 @@
 # blog_website
- Create blogs
+ Create Edit and Delete Blogs
