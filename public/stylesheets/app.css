@@ -1,12 +1,11 @@
 h1{
 	color:#70225e;
-	padding-left: 30%;
-	font: italic small-caps bold 30px/40px Arial, serif;
+	padding-left: 100px;
+	
 }
 h2 {
 	text-transform: uppercase;
 	color:#3e3191;
-	font: italic small-caps bold 18px/30px Georgia, serif;
 	
 }
 img {

@@ -13,11 +13,6 @@ var data=[
 	}
 ]
 function blogfree(){	  
-	Blog.deleteMany({},function(err){
-		if(err) {
-			console.log(err);
-		}
-		console.log("Data removed");
 		data.forEach(function(seed){
 			Blog.create(seed,function(err,blogs){
 				if(err){
@@ -41,7 +36,5 @@ function blogfree(){
 				}
 			});
 		});
-		
-	});
 }
 module.exports=blogfree;

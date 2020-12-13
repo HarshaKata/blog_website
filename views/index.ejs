@@ -4,10 +4,27 @@
 		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
 		<link rel="stylesheet" type="text/css" href="stylesheets/app.css">
 		<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Stalinist+One&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Goldman:wght@700&display=swap" rel="stylesheet">		
 	</head>
+	<style>
+		#first{
+			font-family: 'Stalinist One', cursive;
+			font-size: 35px;
+		}
+		h2{
+			font-family: 'Goldman', cursive;
+		}
+		#image1{
+			width: 450px;
+			height: 250px;
+		}
+	</style>
 	<body>
 		
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<%/* <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
   <a class="navbar-brand" href="/">HOME</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -28,7 +45,24 @@
       </li>
     </ul>
   </div>
+</nav> */%>
+<nav class="navbar navbar-expand-sm navbar-dark bg-secondary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">HOME</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link active" aria-current="page" href="/register">SIGNIN</a>
+        <a class="nav-link" href="/login">LOGIN</a>
+        <a class="nav-link" href="/logout">LOGOUT</a>
+        <a class="nav-link" href="/blogs/new" tabindex="-1" aria-disabled="true">NEW</a>
+      </div>
+    </div>
+  </div>
 </nav>
+		<br>
 		<div class="container">
 			<div class="jumbotron">
 				<h1 id="first">
@@ -41,11 +75,13 @@
 				<div class="row">
 					<div class="col-sm">
 			 			<h2><%= blog.title %></h2>
-						<img src="<%= blog.image %>">
+						<img id="image1" src="<%= blog.image %>">
+						
 						<a href="/blogs/<%=blog._id%>"><button type="button" class="btn btn-info">Read More!</button></a>
+						
 					</div>
 		  		</div>
-				
+				<br>
 				<% }) %>
 		</div>
 		

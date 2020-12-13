@@ -2,6 +2,7 @@ var mongoose=require("mongoose");
 var blogSchema=new mongoose.Schema({
 	title: String,
 	image: String,
+	matter: String,
 	author: {
 		id: {
 			type:mongoose.Schema.Types.ObjectId,
